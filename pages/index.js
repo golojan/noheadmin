@@ -1,14 +1,31 @@
 import Head from 'next/head'
-
+import { useState } from 'react'
 import { useAtom } from 'jotai'
 import { logoAtom } from '../store'
 import { authLogin } from '../libs/withAuthSync'
 
 export default function Home() {
+  const [error, setError] = useState("")
+  const [errorColor, setErrorColor] = useState("green")
   const [logon, setLogon] = useAtom(logoAtom)
-  const processLogin = (event) => {
+  const processLogin = async (event) => {
     event.preventDefault();
-    authLogin('728y2i42834y23u4ur23u');
+    setError(".....Busy.....");
+    setErrorColor("green")
+    const result = await fetch('/api/login', {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(logon)
+    })
+    const admin = await result.json();
+    const { status } = admin;
+    if (status) {
+      setError("");
+      authLogin(admin.accid);
+    } else {
+      setErrorColor("red")
+      setError("Invalid Username and Password");
+    }
   }
   return (
     <>
@@ -19,6 +36,7 @@ export default function Home() {
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">
             <div className="col-md-6">
+              <div className='text-center'><h3 style={{ color: errorColor }}>{error}</h3></div>
               <div className="authincation-content">
                 <div className="row no-gutters">
                   <div className="col-xl-12">

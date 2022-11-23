@@ -4,7 +4,9 @@ import { withAuthSync } from '../../libs/withAuthSync'
 
 const Dashbaord = () => {
     return (
-        <div>index</div>
+        <>
+
+        </>
     )
 }
 
