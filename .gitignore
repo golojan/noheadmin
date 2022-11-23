@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# HTML Template ##
+/html/
+
 # production
 /build
 
