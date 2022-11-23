@@ -6,6 +6,8 @@ export default function Home() {
       <Head>
         <title>nohe</title>
       </Head>
+
+      <h1>Work Starts</h1>
     </>
   )
 }
