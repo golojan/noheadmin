@@ -11,7 +11,7 @@ const Deznav = () => {
                             <span className="nav-text">Dashboard</span>
                         </a>
                             <ul ariaExpanded="false">
-                                <li><a href="/dashboard/">Dashboard</a></li>
+                                <li><a href={"/dashboard/"}>Dashboard</a></li>
                                 <li><a href="#">Create Pages +</a></li>
                                 {/* <li><a href="patient-details.html">Patient Details</a></li> */}
                                 {/* <li><a href="doctor.html">Doctors</a></li> */}
