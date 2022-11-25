@@ -9,9 +9,8 @@ const ContentBody = () => {
     <div className="form-head d-flex align-items-center mb-sm-4 mb-3">
       <div className="mr-auto">
         <h2 className="text-black font-w600">Dashboard</h2>
-        <p className="mb-0">Hospital Admin Dashboard Template</p>
+        <p className="mb-0">Hospital Admin Dashboard</p>
       </div>
-      <a href="javascript:void(0)" className="btn btn-outline-primary"><i className="las la-cog scale5 mr-3" />Customize Layout</a>
     </div>
     <div className="row">
       <div className="col-xl-3 col-sm-6">
@@ -520,7 +519,7 @@ const ContentBody = () => {
       </div>
       <div className="col-xl-6">
         <div className="row">
-          <div className="col-xl-12">	
+          {/* <div className="col-xl-12">	
             <div className="card appointment-schedule">
               <div className="card-header pb-0 border-0">
                 <h3 className="fs-20 text-black mb-0">Appointment Schedule</h3>
@@ -610,8 +609,8 @@ const ContentBody = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-xl-12">	
+          </div> */}
+          {/* <div className="col-xl-12">	
             <div className="card">
               <div className="card-header border-0 pb-0">
                 <h3 className="fs-20 text-black mb-0 mr-2">Revenue Summary</h3>
@@ -630,9 +629,9 @@ const ContentBody = () => {
                 <div id="chartBar" />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-xl-12">	
-            <div className="card patient-activity">
+            {/* <div className="card patient-activity">
               <div className="card-header border-0 pb-0">
                 <h3 className="fs-20 text-black mb-0">Recent Patient Activity</h3>
                 <div className="dropdown ml-auto">
@@ -876,7 +875,7 @@ const ContentBody = () => {
               <div className="card-footer text-center border-0">
                 <a href="patient.html" className="btn-link">See More &gt;&gt;</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

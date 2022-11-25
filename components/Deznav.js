@@ -12,14 +12,14 @@ const Deznav = () => {
                         </a>
                             <ul ariaExpanded="false">
                                 <li><a href="index.html">Dashboard</a></li>
-                                <li><a href="patient.html">Patient</a></li>
+                                {/* <li><a href="patient.html">Patient</a></li>
                                 <li><a href="patient-details.html">Patient Details</a></li>
                                 <li><a href="doctor.html">Doctors</a></li>
                                 <li><a href="doctor-details.html">Doctor Details</a></li>
-                                <li><a href="reviews.html">Reviews</a></li>
+                                <li><a href="reviews.html">Reviews</a></li> */}
                             </ul>
                         </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-television" />
                             <span className="nav-text">Apps</span>
                         </a>
@@ -31,9 +31,9 @@ const Deznav = () => {
                                         <li><a href="email-inbox.html">Inbox</a></li>
                                         <li><a href="email-read.html">Read</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="app-calender.html">Calendar</a></li>
-                                <li><a className="has-arrow" href="javascript:void()" ariaExpanded="false">Shop</a>
+                                </li> */}
+                                {/* <li><a href="app-calender.html">Calendar</a></li> 
+                                 <li><a className="has-arrow" href="javascript:void()" ariaExpanded="false">Shop</a>
                                     <ul ariaExpanded="false">
                                         <li><a href="ecom-product-grid.html">Product Grid</a></li>
                                         <li><a href="ecom-product-list.html">Product List</a></li>
@@ -45,8 +45,8 @@ const Deznav = () => {
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        </li> */}
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-controls-3" />
                             <span className="nav-text">Charts</span>
                         </a>
@@ -58,8 +58,8 @@ const Deznav = () => {
                                 <li><a href="chart-sparkline.html">Sparkline</a></li>
                                 <li><a href="chart-peity.html">Peity</a></li>
                             </ul>
-                        </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        </li> */}
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-internet" />
                             <span className="nav-text">Bootstrap</span>
                         </a>
@@ -82,8 +82,8 @@ const Deznav = () => {
                                 <li><a href="ui-pagination.html">Pagination</a></li>
                                 <li><a href="ui-grid.html">Grid</a></li>
                             </ul>
-                        </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        </li> */}
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-heart" />
                             <span className="nav-text">Plugins</span>
                         </a>
@@ -96,13 +96,13 @@ const Deznav = () => {
                                 <li><a href="map-jqvmap.html">Jqv Map</a></li>
                                 <li><a href="uc-lightgallery.html">Lightgallery</a></li>
                             </ul>
-                        </li>
-                        <li><a href="widget-basic.html" className="ai-icon" ariaExpanded="false">
+                        </li> */}
+                        {/* <li><a href="widget-basic.html" className="ai-icon" ariaExpanded="false">
                             <i className="flaticon-381-settings-2" />
                             <span className="nav-text">Widget</span>
                         </a>
-                        </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        </li> */}
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-notepad" />
                             <span className="nav-text">Forms</span>
                         </a>
@@ -113,17 +113,17 @@ const Deznav = () => {
                                 <li><a href="form-pickers.html">Pickers</a></li>
                                 <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
                             </ul>
-                        </li>
+                        </li> */}
                         <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-network" />
                             <span className="nav-text">Table</span>
                         </a>
                             <ul ariaExpanded="false">
-                                <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
+                                {/* <li><a href="table-bootstrap-basic.html">Bootstrap</a></li> */}
                                 <li><a href="table-datatable-basic.html">Datatable</a></li>
                             </ul>
                         </li>
-                        <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
+                        {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
                             <i className="flaticon-381-layer-1" />
                             <span className="nav-text">Pages</span>
                         </a>
@@ -141,7 +141,7 @@ const Deznav = () => {
                                 </li>
                                 <li><a href="page-lock-screen.html">Lock Screen</a></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                     <div className="copyright">
                         <p><strong>Welly Hospital Admin Dashboard</strong> © 2020 All Rights Reserved</p>
