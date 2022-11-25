@@ -48,12 +48,13 @@ export default function Home() {
                       <form onSubmit={processLogin}>
                         <div className="form-group">
                           <label className="mb-1 text-white"><strong>Email</strong></label>
-                          <input type="email" required={true} className="form-control" defaultValue={logon.email}
+                          <input type="email" required={true} className="form-control text-black form-control-lg" defaultValue={logon.email}
                             onChange={(e) => setLogon({ ...logon, email: e.target.value })} />
                         </div>
+
                         <div className="form-group">
                           <label className="mb-1 text-white"><strong>Password</strong></label>
-                          <input type="password" className="form-control" required={true} onChange={(e) => setLogon({ ...logon, password: e.target.value })} />
+                          <input type="password" className="form-control text-black form-control-lg" required={true} onChange={(e) => setLogon({ ...logon, password: e.target.value })} />
                         </div>
 
                         <div className="text-center">
@@ -61,7 +62,7 @@ export default function Home() {
                         </div>
                       </form>
                       <div className="new-account mt-3 text-center">
-                        <p className="text-white">Contact admin for account</p>
+                        <p className="text-white">Contact Owner for Account Setup</p>
                       </div>
                     </div>
                   </div>

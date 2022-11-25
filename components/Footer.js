@@ -5,7 +5,7 @@ const Footer = () => {
         <>
             <div className="footer">
                 <div className="copyright">
-                    <p>Copyright © Designed &amp; Developed by <a href={"http://dexignzone.com/"} target={"_blank"} rel="noreferrer">DexignZone</a> 2020</p>
+                    <p>Copyright © NOHENUGU. Designed &amp; Developed by <a href={"http://golojan.net/"}>De-Golojan</a> 2022</p>
                 </div>
             </div>
         </>
