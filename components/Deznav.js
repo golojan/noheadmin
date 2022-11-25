@@ -12,11 +12,11 @@ const Deznav = () => {
                         </a>
                             <ul ariaExpanded="false">
                                 <li><a href="index.html">Dashboard</a></li>
-                                {/* <li><a href="patient.html">Patient</a></li>
-                                <li><a href="patient-details.html">Patient Details</a></li>
-                                <li><a href="doctor.html">Doctors</a></li>
-                                <li><a href="doctor-details.html">Doctor Details</a></li>
-                                <li><a href="reviews.html">Reviews</a></li> */}
+                                <li><a href="patient.html">Patient</a></li>
+                                {/* <li><a href="patient-details.html">Patient Details</a></li> */}
+                                {/* <li><a href="doctor.html">Doctors</a></li> */}
+                                {/* <li><a href="doctor-details.html">Doctor Details</a></li> */}
+                                {/* <li><a href="reviews.html">Reviews</a></li>  */}
                             </ul>
                         </li>
                         {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
@@ -142,6 +142,7 @@ const Deznav = () => {
                                 <li><a href="page-lock-screen.html">Lock Screen</a></li>
                             </ul>
                         </li> */}
+                        <button type="button" className="btn btn-outline-success">Log Out</button>        
                     </ul>
                     <div className="copyright">
                         <p><strong>Welly Hospital Admin Dashboard</strong> © 2020 All Rights Reserved</p>
