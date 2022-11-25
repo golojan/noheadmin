@@ -11,8 +11,8 @@ const Deznav = () => {
                             <span className="nav-text">Dashboard</span>
                         </a>
                             <ul ariaExpanded="false">
-                                <li><a href="index.html">Dashboard</a></li>
-                                <li><a href="patient.html">Patient</a></li>
+                                <li><a href="/dashboard/">Dashboard</a></li>
+                                <li><a href="#">Create Pages +</a></li>
                                 {/* <li><a href="patient-details.html">Patient Details</a></li> */}
                                 {/* <li><a href="doctor.html">Doctors</a></li> */}
                                 {/* <li><a href="doctor-details.html">Doctor Details</a></li> */}
@@ -120,7 +120,7 @@ const Deznav = () => {
                         </a>
                             <ul ariaExpanded="false">
                                 {/* <li><a href="table-bootstrap-basic.html">Bootstrap</a></li> */}
-                                <li><a href="table-datatable-basic.html">Datatable</a></li>
+                                <li><a href="#">Datatable</a></li>
                             </ul>
                         </li>
                         {/* <li><a className="has-arrow ai-icon" href="javascript:void()" ariaExpanded="false">
