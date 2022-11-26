@@ -12,13 +12,13 @@ const Layout = ({ children }) => {
             <Head>
                 <title>Admin Dashboard</title>
             </Head>
-            {/* <div id="main-wrapper"> */}
+            <div id={"main-wrapper"}>
             <NavHeader />
             <Header />
             <Deznav />
             {children}
             <Footer />
-            {/* </div> */}
+            </div>
             <Script src='/vendor/global/global.min.js' strategy='lazyOnload' />
             <Script src='/vendor/bootstrap-select/dist/js/bootstrap-select.min.js' strategy='lazyOnload' />
             <Script src='/vendor/chart.js/Chart.bundle.min.js' strategy='lazyOnload' />
