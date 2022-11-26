@@ -25,4 +25,4 @@ const Security = () => {
     )
 }
 
-export default Security
+export default withAuthSync(Security)
