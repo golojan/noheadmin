@@ -29,7 +29,7 @@ const ContentBody = () => {
                 </div>
                 <div className="progress  rounded-0" style={{ height: 4 }}>
                   <div className="progress-bar rounded-0 bg-secondary progress-animated" style={{ width: '0%', height: 4 }} role="progressbar">
-                    <span className="sr-only">50% Complete</span>
+                    <span className="sr-only">0% Complete</span>
                   </div>
                 </div>
               </div>

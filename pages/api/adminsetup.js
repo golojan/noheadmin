@@ -12,7 +12,9 @@ const handler = async (req, res) => {
             firstname: "Nohe",
             lastname: "Admin",
             logonCount: 0
-        }).catch((err) => console.log(err));
+        }).catch((err) => {
+            res.status(400).json({ error: err })
+        });
         if (admin) {
             res.status(200).json({ status: true, admin: admin })
         } else {
