@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
             <Footer />
             </div>
             <Script src='/vendor/global/global.min.js' strategy='lazyOnload' />
-            <Script src='/vendor/bootstrap-select/dist/js/bootstrap-select.min.js' strategy='lazyOnload' />
             <Script src='/vendor/chart.js/Chart.bundle.min.js' strategy='lazyOnload' />
             <Script src='/js/custom.min.js' strategy='lazyOnload' />
             <Script src='/js/deznav-init.js' strategy='lazyOnload' />
@@ -29,6 +28,9 @@ const Layout = ({ children }) => {
             <Script src='/vendor/peity/jquery.peity.min.js' strategy='lazyOnload' />
             <Script src='/vendor/apexchart/apexchart.js' strategy='lazyOnload' />
             <Script src='/js/dashboard/dashboard-1.js' strategy='lazyOnload' />
+            <Script defer src='/vendor/bootstrap-select/dist/js/bootstrap-select.min.js' strategy='lazyOnload' />
+
+
             {/* <Script lang='javascript'>
                 const $ = require("jquery")
                 $(function () {
