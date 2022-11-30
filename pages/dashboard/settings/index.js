@@ -25,4 +25,4 @@ const Settings = () => {
     )
 }
 
-export default Settings
+export default withAuthSync(Settings)

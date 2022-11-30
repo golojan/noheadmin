@@ -26,7 +26,6 @@ const Layout = ({ children }) => {
             <Script src='/js/deznav-init.js' strategy='lazyOnload' />
             <Script src='/vendor/bootstrap-datetimepicker/js/moment.js' strategy='lazyOnload' />
             <Script src='/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' strategy='lazyOnload' />
-
             <Script src='/vendor/peity/jquery.peity.min.js' strategy='lazyOnload' />
             <Script src='/vendor/apexchart/apexchart.js' strategy='lazyOnload' />
             <Script src='/js/dashboard/dashboard-1.js' strategy='lazyOnload' />
