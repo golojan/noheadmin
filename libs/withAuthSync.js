@@ -3,7 +3,7 @@ import { useAtom } from "jotai";
 import Router from "next/router";
 import nextCookie from "next-cookies";
 import cookie from "js-cookie";
-import { isLoggedInAtom, accidAtom, userAtom } from "../store";
+import { isLoggedInAtom, accidAtom, userAtom, pagesAtom } from "../store";
 
 // Login & Create session for a given minutes time
 export const authLogin = ({ token }) => {
@@ -40,11 +40,19 @@ const updateUser = async (_token) => {
   return userinfo;
 };
 
+const getPages = async () => {
+  const response = await fetch(`/api/pages/list`);
+  const pages = await response.json();
+  return pages;
+};
+
+
 export const withAuthSync = (WrappedComponent) => {
   const Wrapper = (props) => {
     const [, setAccid] = useAtom(accidAtom);
     const [, setLoggedIn] = useAtom(isLoggedInAtom);
     const [, setUserInfo] = useAtom(userAtom);
+    const [, setPages] = useAtom(pagesAtom);
 
     const syncLogout = (event) => {
       if (event.key === "logout") {
@@ -64,11 +72,17 @@ export const withAuthSync = (WrappedComponent) => {
         //   setLoggedIn(true);
         //   setAccid(token);
       }
+
+      getPages().then((_pages) => {
+        setPages(_pages.list);
+      }).catch();
+
       return () => {
         window.removeEventListener("storage", syncLogout);
         window.localStorage.removeItem("logout");
       };
-    }, []);
+
+    }, [setPages]);
 
     return <WrappedComponent {...props} />;
   };

@@ -1,6 +1,12 @@
 import React from 'react'
+import { useAtom } from 'jotai'
+import { menuOpenedAtom } from '../store'
 
 const NavHeader = () => {
+  const [menuOpened, setMenuOpened] = useAtom(menuOpenedAtom);
+  const toggleMenu = () => {
+    setMenuOpened(!menuOpened)
+  }
   return (
     <>
       <div className="nav-header">
@@ -9,8 +15,8 @@ const NavHeader = () => {
           <img className="logo-compact" src={"/images/logo-text.png"} alt />
           <img className="brand-title" src={"/images/logo-text.png"} alt />
         </a>
-        <div className="nav-control">
-          <div className="hamburger">
+        <div className="nav-control" onClick={toggleMenu}>
+          <div className={`hamburger ${menuOpened ? 'is-active' : ''}`}>
             <span className="line" /><span className="line" /><span className="line" />
           </div>
         </div>
