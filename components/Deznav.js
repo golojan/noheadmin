@@ -7,11 +7,11 @@ const Deznav = () => {
             <div className="deznav">
                 <div className="deznav-scroll">
                     <ul className="metismenu" id="menu">
-                        <li><a className="has-arrow ai-icon">
+                        <li className='mm-active'><a className="has-arrow ai-icon">
                             <i className="flaticon-381-networking" />
                             <span className="nav-text">Dashboard</span>
                         </a>
-                            <ul ariaExpanded="false">
+                            <ul >
                                 <li><a href={"/dashboard/pages"}>Manage Pages</a></li>
                                 <li><a href={"/dashboard/pages/add"}>Create Page</a></li>
                             </ul>

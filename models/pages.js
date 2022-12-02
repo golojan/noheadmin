@@ -5,7 +5,7 @@ const pagesSchema = new mongoose.Schema({
     shortname: String,
     title: String,
     content: String,
-    enabled: Boolean
+    enabled: { type: Boolean, default: true }
 }, { timestamps: true })
 
 delete mongoose.models.Pages;
