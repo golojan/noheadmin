@@ -26,7 +26,7 @@ const ManagePage = () => {
           <div className='row'>
             <div className="col-12 " style={{ minHeight: '300px' }}>
 
-              <table className='table table-responsive bg-light p-3' style={{ width: '100%', border: '2px solid red' }}>
+              <table className='table table-responsive bg-light p-3 ' style={{ width: '100%' }}>
                 <thead>
                   <tr>
                     <td>ID</td>
@@ -43,8 +43,7 @@ const ManagePage = () => {
                         <td>{page.shortname}</td>
                         <td>{page.title}</td>
                         <td>
-                          <a href={"#"} className="text-success mx-2">EDIT</a>
-                          <a href={"#"} className="text-danger mx-2">DELETE</a>
+                          <a href={`/dashboard/pages/${page._id}/edit`} className="text-success mx-2">EDIT PAGE</a> | <a href={`/dashboard/pages/${page._id}/delete`} className="text-danger mx-2">DELETE PAGE</a>
                         </td>
                       </tr>
                     </>

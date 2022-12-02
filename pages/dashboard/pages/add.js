@@ -6,7 +6,7 @@ import { pagesAtom } from '../../../store'
 
 
 const CreatePage = () => {
-  const [newPage, setNewPage] = useState({ title: '', contents: '' })
+  const [newPage, setNewPage] = useState({ title: '', content: '' })
   const [pages, setPages] = useAtom(pagesAtom);
   useEffect(() => {
 
